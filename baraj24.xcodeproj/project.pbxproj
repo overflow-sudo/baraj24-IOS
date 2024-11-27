@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1786070F806D568F5E7DD185 /* Pods_baraj24Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A090E4605FB3EDA41470A3 /* Pods_baraj24Tests.framework */; };
 		1D27AEC02B9B71C500EF701D /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27AEBF2B9B71C500EF701D /* AlertVC.swift */; };
 		1D27AEC22B9B729700EF701D /* EAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27AEC12B9B729700EF701D /* EAButton.swift */; };
 		1D2917E42B89C7A300C5E4FE /* PickCityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2917E32B89C7A300C5E4FE /* PickCityVC.swift */; };
@@ -17,35 +16,54 @@
 		1D2917EE2B89F21900C5E4FE /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2917ED2B89F21900C5E4FE /* UIViewController+Ext.swift */; };
 		1D2917F02B8A260700C5E4FE /* DamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2917EF2B8A260700C5E4FE /* DamVC.swift */; };
 		1D4EDFBA2B7CF38500451EB1 /* Baraj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4EDFB92B7CF38500451EB1 /* Baraj.swift */; };
-		1D63EB4C2A9A970F00C953A2 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D63EB4B2A9A970F00C953A2 /* testViewController.swift */; };
+		1D58A3C42CF25A41002B2246 /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58A3C32CF25A41002B2246 /* CitiesTableViewCell.swift */; };
+		1D58A3C62CF30D03002B2246 /* Anim.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D58A3C52CF30D03002B2246 /* Anim.json */; };
+		1D58A3C92CF315D5002B2246 /* DamsPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58A3C82CF315D5002B2246 /* DamsPC.swift */; };
+		1D58A3CB2CF318BB002B2246 /* DamRateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58A3CA2CF318BB002B2246 /* DamRateVC.swift */; };
+		1D58A3CD2CF31E03002B2246 /* EAPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58A3CC2CF31E03002B2246 /* EAPageControl.swift */; };
+		1D58A3CF2CF32598002B2246 /* DamListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58A3CE2CF32598002B2246 /* DamListVC.swift */; };
+		1D58A3D12CF33CB8002B2246 /* Animation - 1732445464829.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D58A3D02CF33CB8002B2246 /* Animation - 1732445464829.json */; };
+		1D58B5402CF70B970071EDC1 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 1D58B53F2CF70B970071EDC1 /* OneSignalFramework */; };
+		1D58B54F2CF713680071EDC1 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1D58B54E2CF713680071EDC1 /* DGCharts */; };
+		1D58B5522CF7138E0071EDC1 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 1D58B5512CF7138E0071EDC1 /* Algorithms */; };
 		1D6F41C02A81108800055D87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F41BF2A81108800055D87 /* AppDelegate.swift */; };
 		1D6F41C22A81108800055D87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F41C12A81108800055D87 /* SceneDelegate.swift */; };
-		1D6F41C42A81108800055D87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F41C32A81108800055D87 /* ViewController.swift */; };
-		1D6F41C72A81108800055D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6F41C52A81108800055D87 /* Main.storyboard */; };
 		1D6F41CA2A81108800055D87 /* baraj24.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F41C82A81108800055D87 /* baraj24.xcdatamodeld */; };
 		1D6F41CC2A81108900055D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D6F41CB2A81108900055D87 /* Assets.xcassets */; };
 		1D6F41CF2A81108900055D87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6F41CD2A81108900055D87 /* LaunchScreen.storyboard */; };
 		1D6F41DA2A81108900055D87 /* baraj24Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F41D92A81108900055D87 /* baraj24Tests.swift */; };
 		1D6F41E42A81108900055D87 /* baraj24UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F41E32A81108900055D87 /* baraj24UITests.swift */; };
 		1D6F41E62A81108900055D87 /* baraj24UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F41E52A81108900055D87 /* baraj24UITestsLaunchTests.swift */; };
-		1D6F41F32A81121A00055D87 /* cityPickVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6F41F22A81121900055D87 /* cityPickVC.swift */; };
-		1D781DF82A92A6EF00912EF4 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D781DF72A92A6EF00912EF4 /* ChartsViewController.swift */; };
-		1D9D7D9E2B861B96006A1DD8 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1D9D7D9D2B861B96006A1DD8 /* FirebaseDatabase */; };
-		1D9D7DA02B861B96006A1DD8 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D9D7D9F2B861B96006A1DD8 /* FirebaseDatabaseSwift */; };
-		1D9D7DA22B861B96006A1DD8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1D9D7DA12B861B96006A1DD8 /* FirebaseFirestore */; };
-		1D9D7DA42B861B96006A1DD8 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 1D9D7DA32B861B96006A1DD8 /* FirebaseFirestoreCombine-Community */; };
-		1D9D7DA62B861B96006A1DD8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1D9D7DA52B861B96006A1DD8 /* FirebaseFirestoreSwift */; };
-		1DACD72F2C1C7E5C00847390 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 1DACD72E2C1C7E5C00847390 /* OneSignalExtension */; };
-		1DACD7312C1C7E5C00847390 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 1DACD7302C1C7E5C00847390 /* OneSignalFramework */; };
-		1DACD7332C1C7E5C00847390 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 1DACD7322C1C7E5C00847390 /* OneSignalInAppMessages */; };
-		1DACD7352C1C7E5C00847390 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 1DACD7342C1C7E5C00847390 /* OneSignalLocation */; };
+		1D7380232CF0A8D40084DA91 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7380222CF0A8D40084DA91 /* OnboardingVC.swift */; };
+		1D73802E2CF1E5070084DA91 /* EACircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73802D2CF1E5070084DA91 /* EACircleProgress.swift */; };
+		1D73809F2CF1F6E80084DA91 /* Animation - 1732362065735.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D73809E2CF1F6E80084DA91 /* Animation - 1732362065735.json */; };
+		1D7380A22CF1FDCC0084DA91 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7380A12CF1FDCC0084DA91 /* APIManager.swift */; };
+		1DA012352CF21A0B00477D37 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012322CF21A0B00477D37 /* Poppins-Thin.ttf */; };
+		1DA012362CF21A0B00477D37 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012272CF21A0B00477D37 /* Poppins-ExtraBoldItalic.ttf */; };
+		1DA012372CF21A0B00477D37 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA0122A2CF21A0B00477D37 /* Poppins-Italic.ttf */; };
+		1DA012382CF21A0B00477D37 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012332CF21A0B00477D37 /* Poppins-ThinItalic.ttf */; };
+		1DA012392CF21A0B00477D37 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012222CF21A0B00477D37 /* Poppins-Black.ttf */; };
+		1DA0123A2CF21A0B00477D37 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012242CF21A0B00477D37 /* Poppins-Bold.ttf */; };
+		1DA0123B2CF21A0B00477D37 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012262CF21A0B00477D37 /* Poppins-ExtraBold.ttf */; };
+		1DA0123C2CF21A0B00477D37 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012282CF21A0B00477D37 /* Poppins-ExtraLight.ttf */; };
+		1DA0123D2CF21A0B00477D37 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA0122D2CF21A0B00477D37 /* Poppins-Medium.ttf */; };
+		1DA0123E2CF21A0B00477D37 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012302CF21A0B00477D37 /* Poppins-SemiBold.ttf */; };
+		1DA0123F2CF21A0B00477D37 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012312CF21A0B00477D37 /* Poppins-SemiBoldItalic.ttf */; };
+		1DA012402CF21A0B00477D37 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012252CF21A0B00477D37 /* Poppins-BoldItalic.ttf */; };
+		1DA012412CF21A0B00477D37 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012292CF21A0B00477D37 /* Poppins-ExtraLightItalic.ttf */; };
+		1DA012422CF21A0B00477D37 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA0122E2CF21A0B00477D37 /* Poppins-MediumItalic.ttf */; };
+		1DA012432CF21A0B00477D37 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA0122B2CF21A0B00477D37 /* Poppins-Light.ttf */; };
+		1DA012442CF21A0B00477D37 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012232CF21A0B00477D37 /* Poppins-BlackItalic.ttf */; };
+		1DA012452CF21A0B00477D37 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA0122F2CF21A0B00477D37 /* Poppins-Regular.ttf */; };
+		1DA012462CF21A0B00477D37 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1DA012212CF21A0B00477D37 /* OFL.txt */; };
+		1DA012472CF21A0B00477D37 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DA0122C2CF21A0B00477D37 /* Poppins-LightItalic.ttf */; };
+		1DA9182D2CF6F81D007EB9AE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA9182C2CF6F81D007EB9AE /* Lottie */; };
+		1DA918302CF6F849007EB9AE /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA9182F2CF6F849007EB9AE /* GoogleMobileAds */; };
 		1DAE498F2B8DC57200292033 /* BarajlarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE498E2B8DC57200292033 /* BarajlarTableViewCell.swift */; };
-		1DB0998F2A8D3981007AFA30 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0998E2A8D3981007AFA30 /* MapsViewController.swift */; };
 		1DBE11182C1B7DFC003F4D69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE11172C1B7DFC003F4D69 /* GoogleService-Info.plist */; };
 		1DE29B912B876A0600A1993E /* OldData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE29B902B876A0600A1993E /* OldData.swift */; };
+		1DE8ED812CF5F57100964AFE /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1DE8ED7A2CF5F57100964AFE /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1DED1E3F2B8F7C74007F0D16 /* EAImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED1E3E2B8F7C74007F0D16 /* EAImageView.swift */; };
-		448E4D4E69FF3885386DEDBF /* Pods_baraj24.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA978E0ABA66FD9DDF227FBF /* Pods_baraj24.framework */; };
-		EE44814477097F09840EB3C4 /* Pods_baraj24_baraj24UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE185D26BDB343FC34D89B1 /* Pods_baraj24_baraj24UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +81,28 @@
 			remoteGlobalIDString = 1D6F41BB2A81108700055D87;
 			remoteInfo = baraj24;
 		};
+		1DE8ED7F2CF5F57100964AFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D6F41B42A81108700055D87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DE8ED792CF5F57100964AFE;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1DE8ED752CF5F54500964AFE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1DE8ED812CF5F57100964AFE /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D27AEBF2B9B71C500EF701D /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
@@ -75,12 +114,16 @@
 		1D2917ED2B89F21900C5E4FE /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		1D2917EF2B8A260700C5E4FE /* DamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamVC.swift; sourceTree = "<group>"; };
 		1D4EDFB92B7CF38500451EB1 /* Baraj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baraj.swift; sourceTree = "<group>"; };
-		1D63EB4B2A9A970F00C953A2 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		1D58A3C32CF25A41002B2246 /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
+		1D58A3C52CF30D03002B2246 /* Anim.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Anim.json; sourceTree = "<group>"; };
+		1D58A3C82CF315D5002B2246 /* DamsPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamsPC.swift; sourceTree = "<group>"; };
+		1D58A3CA2CF318BB002B2246 /* DamRateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamRateVC.swift; sourceTree = "<group>"; };
+		1D58A3CC2CF31E03002B2246 /* EAPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAPageControl.swift; sourceTree = "<group>"; };
+		1D58A3CE2CF32598002B2246 /* DamListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamListVC.swift; sourceTree = "<group>"; };
+		1D58A3D02CF33CB8002B2246 /* Animation - 1732445464829.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Animation - 1732445464829.json"; sourceTree = "<group>"; };
 		1D6F41BC2A81108800055D87 /* baraj24.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baraj24.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6F41BF2A81108800055D87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D6F41C12A81108800055D87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D6F41C32A81108800055D87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1D6F41C62A81108800055D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D6F41C92A81108800055D87 /* baraj24.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = baraj24.xcdatamodel; sourceTree = "<group>"; };
 		1D6F41CB2A81108900055D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D6F41CE2A81108900055D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,40 +133,63 @@
 		1D6F41DF2A81108900055D87 /* baraj24UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baraj24UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6F41E32A81108900055D87 /* baraj24UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baraj24UITests.swift; sourceTree = "<group>"; };
 		1D6F41E52A81108900055D87 /* baraj24UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baraj24UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1D6F41F22A81121900055D87 /* cityPickVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cityPickVC.swift; sourceTree = "<group>"; };
-		1D781DF72A92A6EF00912EF4 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		1D7380222CF0A8D40084DA91 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		1D73802D2CF1E5070084DA91 /* EACircleProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EACircleProgress.swift; sourceTree = "<group>"; };
+		1D73809E2CF1F6E80084DA91 /* Animation - 1732362065735.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Animation - 1732362065735.json"; sourceTree = "<group>"; };
+		1D7380A12CF1FDCC0084DA91 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		1DA012212CF21A0B00477D37 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		1DA012222CF21A0B00477D37 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		1DA012232CF21A0B00477D37 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		1DA012242CF21A0B00477D37 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		1DA012252CF21A0B00477D37 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		1DA012262CF21A0B00477D37 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1DA012272CF21A0B00477D37 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		1DA012282CF21A0B00477D37 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1DA012292CF21A0B00477D37 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		1DA0122A2CF21A0B00477D37 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		1DA0122B2CF21A0B00477D37 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		1DA0122C2CF21A0B00477D37 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		1DA0122D2CF21A0B00477D37 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		1DA0122E2CF21A0B00477D37 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		1DA0122F2CF21A0B00477D37 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		1DA012302CF21A0B00477D37 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		1DA012312CF21A0B00477D37 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		1DA012322CF21A0B00477D37 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		1DA012332CF21A0B00477D37 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
 		1DACD72C2C1C7D2D00847390 /* baraj24.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = baraj24.entitlements; sourceTree = "<group>"; };
 		1DAE498E2B8DC57200292033 /* BarajlarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarajlarTableViewCell.swift; sourceTree = "<group>"; };
-		1DB0998E2A8D3981007AFA30 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		1DBE11172C1B7DFC003F4D69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1DE29B902B876A0600A1993E /* OldData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldData.swift; sourceTree = "<group>"; };
+		1DE8ED7A2CF5F57100964AFE /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DED1E3E2B8F7C74007F0D16 /* EAImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAImageView.swift; sourceTree = "<group>"; };
-		3CE185D26BDB343FC34D89B1 /* Pods_baraj24_baraj24UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baraj24_baraj24UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70D7B3D3467F60D5670CB0A4 /* Pods-baraj24Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baraj24Tests.release.xcconfig"; path = "Target Support Files/Pods-baraj24Tests/Pods-baraj24Tests.release.xcconfig"; sourceTree = "<group>"; };
-		86F87F4E9A35E257599C7483 /* Pods-baraj24-baraj24UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baraj24-baraj24UITests.debug.xcconfig"; path = "Target Support Files/Pods-baraj24-baraj24UITests/Pods-baraj24-baraj24UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		AE624747D2A273E93E5D863F /* Pods-baraj24.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baraj24.release.xcconfig"; path = "Target Support Files/Pods-baraj24/Pods-baraj24.release.xcconfig"; sourceTree = "<group>"; };
-		B9A090E4605FB3EDA41470A3 /* Pods_baraj24Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baraj24Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCCF8EAAC062659231B14B05 /* Pods-baraj24-baraj24UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baraj24-baraj24UITests.release.xcconfig"; path = "Target Support Files/Pods-baraj24-baraj24UITests/Pods-baraj24-baraj24UITests.release.xcconfig"; sourceTree = "<group>"; };
-		CE28B7F575FF375DD585B559 /* Pods-baraj24.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baraj24.debug.xcconfig"; path = "Target Support Files/Pods-baraj24/Pods-baraj24.debug.xcconfig"; sourceTree = "<group>"; };
-		D3A6D212E292B841469918D6 /* Pods-baraj24Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baraj24Tests.debug.xcconfig"; path = "Target Support Files/Pods-baraj24Tests/Pods-baraj24Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EA978E0ABA66FD9DDF227FBF /* Pods_baraj24.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baraj24.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1DE8ED822CF5F57100964AFE /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1DE8ED792CF5F57100964AFE /* OneSignalNotificationServiceExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1D7380242CF0ABDC0084DA91 /* VC */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = VC; sourceTree = "<group>"; };
+		1DE8ED6A2CF5F54500964AFE /* OneSignalNotificationServiceExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = OneSignalNotificationServiceExtension; sourceTree = "<group>"; };
+		1DE8ED7B2CF5F57100964AFE /* OneSignalNotificationServiceExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (1DE8ED822CF5F57100964AFE /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = OneSignalNotificationServiceExtension; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1D6F41B92A81108700055D87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DACD7312C1C7E5C00847390 /* OneSignalFramework in Frameworks */,
-				1DACD72F2C1C7E5C00847390 /* OneSignalExtension in Frameworks */,
-				1D9D7DA02B861B96006A1DD8 /* FirebaseDatabaseSwift in Frameworks */,
-				1DACD7332C1C7E5C00847390 /* OneSignalInAppMessages in Frameworks */,
-				1D9D7DA22B861B96006A1DD8 /* FirebaseFirestore in Frameworks */,
-				1D9D7D9E2B861B96006A1DD8 /* FirebaseDatabase in Frameworks */,
-				1DACD7352C1C7E5C00847390 /* OneSignalLocation in Frameworks */,
-				1D9D7DA42B861B96006A1DD8 /* FirebaseFirestoreCombine-Community in Frameworks */,
-				448E4D4E69FF3885386DEDBF /* Pods_baraj24.framework in Frameworks */,
-				1D9D7DA62B861B96006A1DD8 /* FirebaseFirestoreSwift in Frameworks */,
+				1D58B5522CF7138E0071EDC1 /* Algorithms in Frameworks */,
+				1D58B5402CF70B970071EDC1 /* OneSignalFramework in Frameworks */,
+				1DA918302CF6F849007EB9AE /* GoogleMobileAds in Frameworks */,
+				1D58B54F2CF713680071EDC1 /* DGCharts in Frameworks */,
+				1DA9182D2CF6F81D007EB9AE /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +197,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1786070F806D568F5E7DD185 /* Pods_baraj24Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +204,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE44814477097F09840EB3C4 /* Pods_baraj24_baraj24UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DE8ED772CF5F57100964AFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +220,8 @@
 		1D2917E12B89C6BB00C5E4FE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1D58A3C72CF315A9002B2246 /* Dams */,
+				1D7380212CF0A8BE0084DA91 /* Onboarding */,
 				1D2917E32B89C7A300C5E4FE /* PickCityVC.swift */,
 				1D2917E52B89D29900C5E4FE /* DetailsVC.swift */,
 				1D2917EF2B8A260700C5E4FE /* DamVC.swift */,
@@ -175,6 +248,8 @@
 				1D2917EA2B89E6D400C5E4FE /* EATitle.swift */,
 				1DED1E3E2B8F7C74007F0D16 /* EAImageView.swift */,
 				1D27AEC12B9B729700EF701D /* EAButton.swift */,
+				1D73802D2CF1E5070084DA91 /* EACircleProgress.swift */,
+				1D58A3CC2CF31E03002B2246 /* EAPageControl.swift */,
 			);
 			name = CustomUI;
 			sourceTree = "<group>";
@@ -191,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				1DAE498E2B8DC57200292033 /* BarajlarTableViewCell.swift */,
+				1D58A3C32CF25A41002B2246 /* CitiesTableViewCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -204,15 +280,25 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		1D58A3C72CF315A9002B2246 /* Dams */ = {
+			isa = PBXGroup;
+			children = (
+				1D58A3C82CF315D5002B2246 /* DamsPC.swift */,
+				1D58A3CA2CF318BB002B2246 /* DamRateVC.swift */,
+				1D58A3CE2CF32598002B2246 /* DamListVC.swift */,
+			);
+			path = Dams;
+			sourceTree = "<group>";
+		};
 		1D6F41B32A81108700055D87 = {
 			isa = PBXGroup;
 			children = (
 				1D6F41BE2A81108800055D87 /* baraj24 */,
 				1D6F41D82A81108900055D87 /* baraj24Tests */,
 				1D6F41E22A81108900055D87 /* baraj24UITests */,
+				1DE8ED6A2CF5F54500964AFE /* OneSignalNotificationServiceExtension */,
+				1DE8ED7B2CF5F57100964AFE /* OneSignalNotificationServiceExtension */,
 				1D6F41BD2A81108800055D87 /* Products */,
-				C9912C5E5F47BDF8F73B5558 /* Pods */,
-				E74A08AB252E71B3762753A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,6 +308,7 @@
 				1D6F41BC2A81108800055D87 /* baraj24.app */,
 				1D6F41D52A81108900055D87 /* baraj24Tests.xctest */,
 				1D6F41DF2A81108900055D87 /* baraj24UITests.xctest */,
+				1DE8ED7A2CF5F57100964AFE /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,19 +316,18 @@
 		1D6F41BE2A81108800055D87 /* baraj24 */ = {
 			isa = PBXGroup;
 			children = (
+				1DA012202CF21A0200477D37 /* Fonts */,
+				1D7380A02CF1FDBC0084DA91 /* Manager */,
 				1DACD72C2C1C7D2D00847390 /* baraj24.entitlements */,
+				1D58A3D02CF33CB8002B2246 /* Animation - 1732445464829.json */,
+				1D58A3C52CF30D03002B2246 /* Anim.json */,
+				1D73809E2CF1F6E80084DA91 /* Animation - 1732362065735.json */,
 				1DBE11172C1B7DFC003F4D69 /* GoogleService-Info.plist */,
 				1D2917EC2B89F20200C5E4FE /* Ext */,
 				1D2917E72B89E46E00C5E4FE /* CustomUI */,
 				1D2917E22B89C6C400C5E4FE /* Supporting */,
 				1D2917E12B89C6BB00C5E4FE /* Controller */,
 				1D4EDFB82B7CF37500451EB1 /* Model */,
-				1D6F41C32A81108800055D87 /* ViewController.swift */,
-				1D6F41C52A81108800055D87 /* Main.storyboard */,
-				1D63EB4B2A9A970F00C953A2 /* testViewController.swift */,
-				1D781DF72A92A6EF00912EF4 /* ChartsViewController.swift */,
-				1DB0998E2A8D3981007AFA30 /* MapsViewController.swift */,
-				1D6F41F22A81121900055D87 /* cityPickVC.swift */,
 				1D6F41CD2A81108900055D87 /* LaunchScreen.storyboard */,
 				1D6F41D02A81108900055D87 /* Info.plist */,
 				1D6F41C82A81108800055D87 /* baraj24.xcdatamodeld */,
@@ -266,27 +352,55 @@
 			path = baraj24UITests;
 			sourceTree = "<group>";
 		};
-		C9912C5E5F47BDF8F73B5558 /* Pods */ = {
+		1D7380212CF0A8BE0084DA91 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				CE28B7F575FF375DD585B559 /* Pods-baraj24.debug.xcconfig */,
-				AE624747D2A273E93E5D863F /* Pods-baraj24.release.xcconfig */,
-				86F87F4E9A35E257599C7483 /* Pods-baraj24-baraj24UITests.debug.xcconfig */,
-				CCCF8EAAC062659231B14B05 /* Pods-baraj24-baraj24UITests.release.xcconfig */,
-				D3A6D212E292B841469918D6 /* Pods-baraj24Tests.debug.xcconfig */,
-				70D7B3D3467F60D5670CB0A4 /* Pods-baraj24Tests.release.xcconfig */,
+				1D7380242CF0ABDC0084DA91 /* VC */,
+				1D7380222CF0A8D40084DA91 /* OnboardingVC.swift */,
 			);
-			path = Pods;
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		E74A08AB252E71B3762753A5 /* Frameworks */ = {
+		1D7380A02CF1FDBC0084DA91 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				EA978E0ABA66FD9DDF227FBF /* Pods_baraj24.framework */,
-				3CE185D26BDB343FC34D89B1 /* Pods_baraj24_baraj24UITests.framework */,
-				B9A090E4605FB3EDA41470A3 /* Pods_baraj24Tests.framework */,
+				1D7380A12CF1FDCC0084DA91 /* APIManager.swift */,
 			);
-			name = Frameworks;
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		1DA012202CF21A0200477D37 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1DA012342CF21A0B00477D37 /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1DA012342CF21A0B00477D37 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				1DA012212CF21A0B00477D37 /* OFL.txt */,
+				1DA012222CF21A0B00477D37 /* Poppins-Black.ttf */,
+				1DA012232CF21A0B00477D37 /* Poppins-BlackItalic.ttf */,
+				1DA012242CF21A0B00477D37 /* Poppins-Bold.ttf */,
+				1DA012252CF21A0B00477D37 /* Poppins-BoldItalic.ttf */,
+				1DA012262CF21A0B00477D37 /* Poppins-ExtraBold.ttf */,
+				1DA012272CF21A0B00477D37 /* Poppins-ExtraBoldItalic.ttf */,
+				1DA012282CF21A0B00477D37 /* Poppins-ExtraLight.ttf */,
+				1DA012292CF21A0B00477D37 /* Poppins-ExtraLightItalic.ttf */,
+				1DA0122A2CF21A0B00477D37 /* Poppins-Italic.ttf */,
+				1DA0122B2CF21A0B00477D37 /* Poppins-Light.ttf */,
+				1DA0122C2CF21A0B00477D37 /* Poppins-LightItalic.ttf */,
+				1DA0122D2CF21A0B00477D37 /* Poppins-Medium.ttf */,
+				1DA0122E2CF21A0B00477D37 /* Poppins-MediumItalic.ttf */,
+				1DA0122F2CF21A0B00477D37 /* Poppins-Regular.ttf */,
+				1DA012302CF21A0B00477D37 /* Poppins-SemiBold.ttf */,
+				1DA012312CF21A0B00477D37 /* Poppins-SemiBoldItalic.ttf */,
+				1DA012322CF21A0B00477D37 /* Poppins-Thin.ttf */,
+				1DA012332CF21A0B00477D37 /* Poppins-ThinItalic.ttf */,
+			);
+			path = Poppins;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,27 +410,26 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6F41E92A81108900055D87 /* Build configuration list for PBXNativeTarget "baraj24" */;
 			buildPhases = (
-				6CF0FCDECDDEB780BB5A4116 /* [CP] Check Pods Manifest.lock */,
 				1D6F41B82A81108700055D87 /* Sources */,
 				1D6F41B92A81108700055D87 /* Frameworks */,
 				1D6F41BA2A81108700055D87 /* Resources */,
-				96D8C9CF4BABC014780CBEDA /* [CP] Embed Pods Frameworks */,
+				1DE8ED752CF5F54500964AFE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1DE8ED802CF5F57100964AFE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1D7380242CF0ABDC0084DA91 /* VC */,
 			);
 			name = baraj24;
 			packageProductDependencies = (
-				1D9D7D9D2B861B96006A1DD8 /* FirebaseDatabase */,
-				1D9D7D9F2B861B96006A1DD8 /* FirebaseDatabaseSwift */,
-				1D9D7DA12B861B96006A1DD8 /* FirebaseFirestore */,
-				1D9D7DA32B861B96006A1DD8 /* FirebaseFirestoreCombine-Community */,
-				1D9D7DA52B861B96006A1DD8 /* FirebaseFirestoreSwift */,
-				1DACD72E2C1C7E5C00847390 /* OneSignalExtension */,
-				1DACD7302C1C7E5C00847390 /* OneSignalFramework */,
-				1DACD7322C1C7E5C00847390 /* OneSignalInAppMessages */,
-				1DACD7342C1C7E5C00847390 /* OneSignalLocation */,
+				1DA9182C2CF6F81D007EB9AE /* Lottie */,
+				1DA9182F2CF6F849007EB9AE /* GoogleMobileAds */,
+				1D58B53F2CF70B970071EDC1 /* OneSignalFramework */,
+				1D58B54E2CF713680071EDC1 /* DGCharts */,
+				1D58B5512CF7138E0071EDC1 /* Algorithms */,
 			);
 			productName = baraj24;
 			productReference = 1D6F41BC2A81108800055D87 /* baraj24.app */;
@@ -361,6 +474,28 @@
 			productReference = 1D6F41DF2A81108900055D87 /* baraj24UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1DE8ED792CF5F57100964AFE /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DE8ED832CF5F57100964AFE /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				1DE8ED762CF5F57100964AFE /* Sources */,
+				1DE8ED772CF5F57100964AFE /* Frameworks */,
+				1DE8ED782CF5F57100964AFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1DE8ED7B2CF5F57100964AFE /* OneSignalNotificationServiceExtension */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 1DE8ED7A2CF5F57100964AFE /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -368,7 +503,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					1D6F41BB2A81108700055D87 = {
@@ -382,6 +517,9 @@
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 1D6F41BB2A81108700055D87;
 					};
+					1DE8ED792CF5F57100964AFE = {
+						CreatedOnToolsVersion = 16.0;
+					};
 				};
 			};
 			buildConfigurationList = 1D6F41B72A81108700055D87 /* Build configuration list for PBXProject "baraj24" */;
@@ -394,8 +532,11 @@
 			);
 			mainGroup = 1D6F41B32A81108700055D87;
 			packageReferences = (
-				1D9D7D9C2B861B2C006A1DD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				1DACD72D2C1C7E5C00847390 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+				1DA9182B2CF6F81D007EB9AE /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				1DA9182E2CF6F849007EB9AE /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				1D58B53E2CF70B970071EDC1 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				1D58B54D2CF713680071EDC1 /* XCRemoteSwiftPackageReference "Charts" */,
+				1D58B5502CF7138E0071EDC1 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = 1D6F41BD2A81108800055D87 /* Products */;
 			projectDirPath = "";
@@ -404,6 +545,7 @@
 				1D6F41BB2A81108700055D87 /* baraj24 */,
 				1D6F41D42A81108900055D87 /* baraj24Tests */,
 				1D6F41DE2A81108900055D87 /* baraj24UITests */,
+				1DE8ED792CF5F57100964AFE /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -414,9 +556,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D6F41CF2A81108900055D87 /* LaunchScreen.storyboard in Resources */,
+				1D73809F2CF1F6E80084DA91 /* Animation - 1732362065735.json in Resources */,
 				1DBE11182C1B7DFC003F4D69 /* GoogleService-Info.plist in Resources */,
 				1D6F41CC2A81108900055D87 /* Assets.xcassets in Resources */,
-				1D6F41C72A81108800055D87 /* Main.storyboard in Resources */,
+				1DA012352CF21A0B00477D37 /* Poppins-Thin.ttf in Resources */,
+				1DA012362CF21A0B00477D37 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				1DA012372CF21A0B00477D37 /* Poppins-Italic.ttf in Resources */,
+				1DA012382CF21A0B00477D37 /* Poppins-ThinItalic.ttf in Resources */,
+				1DA012392CF21A0B00477D37 /* Poppins-Black.ttf in Resources */,
+				1DA0123A2CF21A0B00477D37 /* Poppins-Bold.ttf in Resources */,
+				1DA0123B2CF21A0B00477D37 /* Poppins-ExtraBold.ttf in Resources */,
+				1DA0123C2CF21A0B00477D37 /* Poppins-ExtraLight.ttf in Resources */,
+				1DA0123D2CF21A0B00477D37 /* Poppins-Medium.ttf in Resources */,
+				1D58A3D12CF33CB8002B2246 /* Animation - 1732445464829.json in Resources */,
+				1DA0123E2CF21A0B00477D37 /* Poppins-SemiBold.ttf in Resources */,
+				1D58A3C62CF30D03002B2246 /* Anim.json in Resources */,
+				1DA0123F2CF21A0B00477D37 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				1DA012402CF21A0B00477D37 /* Poppins-BoldItalic.ttf in Resources */,
+				1DA012412CF21A0B00477D37 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				1DA012422CF21A0B00477D37 /* Poppins-MediumItalic.ttf in Resources */,
+				1DA012432CF21A0B00477D37 /* Poppins-Light.ttf in Resources */,
+				1DA012442CF21A0B00477D37 /* Poppins-BlackItalic.ttf in Resources */,
+				1DA012452CF21A0B00477D37 /* Poppins-Regular.ttf in Resources */,
+				1DA012462CF21A0B00477D37 /* OFL.txt in Resources */,
+				1DA012472CF21A0B00477D37 /* Poppins-LightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +591,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1D6F41DD2A81108900055D87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DE8ED782CF5F57100964AFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -498,45 +668,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6CF0FCDECDDEB780BB5A4116 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-baraj24-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96D8C9CF4BABC014780CBEDA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-baraj24/Pods-baraj24-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-baraj24/Pods-baraj24-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-baraj24/Pods-baraj24-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -544,26 +675,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D6F41F32A81121A00055D87 /* cityPickVC.swift in Sources */,
+				1D73802E2CF1E5070084DA91 /* EACircleProgress.swift in Sources */,
+				1D7380A22CF1FDCC0084DA91 /* APIManager.swift in Sources */,
 				1D2917F02B8A260700C5E4FE /* DamVC.swift in Sources */,
 				1D2917E62B89D29900C5E4FE /* DetailsVC.swift in Sources */,
 				1D2917EE2B89F21900C5E4FE /* UIViewController+Ext.swift in Sources */,
 				1DAE498F2B8DC57200292033 /* BarajlarTableViewCell.swift in Sources */,
+				1D58A3CD2CF31E03002B2246 /* EAPageControl.swift in Sources */,
 				1D2917EB2B89E6D400C5E4FE /* EATitle.swift in Sources */,
-				1D6F41C42A81108800055D87 /* ViewController.swift in Sources */,
-				1D63EB4C2A9A970F00C953A2 /* testViewController.swift in Sources */,
 				1D6F41C02A81108800055D87 /* AppDelegate.swift in Sources */,
+				1D58A3CF2CF32598002B2246 /* DamListVC.swift in Sources */,
 				1D2917E92B89E47E00C5E4FE /* EALabel.swift in Sources */,
-				1DB0998F2A8D3981007AFA30 /* MapsViewController.swift in Sources */,
 				1DE29B912B876A0600A1993E /* OldData.swift in Sources */,
 				1DED1E3F2B8F7C74007F0D16 /* EAImageView.swift in Sources */,
+				1D58A3C92CF315D5002B2246 /* DamsPC.swift in Sources */,
+				1D7380232CF0A8D40084DA91 /* OnboardingVC.swift in Sources */,
 				1D6F41CA2A81108800055D87 /* baraj24.xcdatamodeld in Sources */,
 				1D4EDFBA2B7CF38500451EB1 /* Baraj.swift in Sources */,
-				1D781DF82A92A6EF00912EF4 /* ChartsViewController.swift in Sources */,
 				1D27AEC02B9B71C500EF701D /* AlertVC.swift in Sources */,
+				1D58A3C42CF25A41002B2246 /* CitiesTableViewCell.swift in Sources */,
 				1D6F41C22A81108800055D87 /* SceneDelegate.swift in Sources */,
 				1D2917E42B89C7A300C5E4FE /* PickCityVC.swift in Sources */,
 				1D27AEC22B9B729700EF701D /* EAButton.swift in Sources */,
+				1D58A3CB2CF318BB002B2246 /* DamRateVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +718,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DE8ED762CF5F57100964AFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -597,17 +738,14 @@
 			target = 1D6F41BB2A81108700055D87 /* baraj24 */;
 			targetProxy = 1D6F41E02A81108900055D87 /* PBXContainerItemProxy */;
 		};
+		1DE8ED802CF5F57100964AFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DE8ED792CF5F57100964AFE /* OneSignalNotificationServiceExtension */;
+			targetProxy = 1DE8ED7F2CF5F57100964AFE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1D6F41C52A81108800055D87 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D6F41C62A81108800055D87 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D6F41CD2A81108900055D87 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -735,7 +873,6 @@
 		};
 		1D6F41EA2A81108900055D87 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE28B7F575FF375DD585B559 /* Pods-baraj24.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -749,15 +886,15 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Size en yakın barajları gösterebilmek için konum bilginize ihtiyaç duyuyoruz.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.5;
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.emiraksu.baraj24Application1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -769,7 +906,6 @@
 		};
 		1D6F41EB2A81108900055D87 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE624747D2A273E93E5D863F /* Pods-baraj24.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -783,15 +919,15 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Size en yakın barajları gösterebilmek için konum bilginize ihtiyaç duyuyoruz.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.5;
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.emiraksu.baraj24Application1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -803,7 +939,6 @@
 		};
 		1D6F41ED2A81108900055D87 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3A6D212E292B841469918D6 /* Pods-baraj24Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -824,7 +959,6 @@
 		};
 		1D6F41EE2A81108900055D87 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70D7B3D3467F60D5670CB0A4 /* Pods-baraj24Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -845,7 +979,6 @@
 		};
 		1D6F41F02A81108900055D87 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86F87F4E9A35E257599C7483 /* Pods-baraj24-baraj24UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -864,7 +997,6 @@
 		};
 		1D6F41F12A81108900055D87 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCCF8EAAC062659231B14B05 /* Pods-baraj24-baraj24UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -878,6 +1010,69 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = baraj24;
+			};
+			name = Release;
+		};
+		1DE8ED842CF5F57100964AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NVD8GK9BF;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emiraksu.baraj24Application1.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DE8ED852CF5F57100964AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NVD8GK9BF;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emiraksu.baraj24Application1.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -920,72 +1115,85 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1DE8ED832CF5F57100964AFE /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DE8ED842CF5F57100964AFE /* Debug */,
+				1DE8ED852CF5F57100964AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1D9D7D9C2B861B2C006A1DD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		1D58B53E2CF70B970071EDC1 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 10.21.0;
+				minimumVersion = 5.2.8;
 			};
 		};
-		1DACD72D2C1C7E5C00847390 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+		1D58B54D2CF713680071EDC1 /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			repositoryURL = "https://github.com/ChartsOrg/Charts";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.1;
+				minimumVersion = 5.1.0;
+			};
+		};
+		1D58B5502CF7138E0071EDC1 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		1DA9182B2CF6F81D007EB9AE /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+		1DA9182E2CF6F849007EB9AE /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1D9D7D9D2B861B96006A1DD8 /* FirebaseDatabase */ = {
+		1D58B53F2CF70B970071EDC1 /* OneSignalFramework */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1D9D7D9C2B861B2C006A1DD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		1D9D7D9F2B861B96006A1DD8 /* FirebaseDatabaseSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1D9D7D9C2B861B2C006A1DD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabaseSwift;
-		};
-		1D9D7DA12B861B96006A1DD8 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1D9D7D9C2B861B2C006A1DD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		1D9D7DA32B861B96006A1DD8 /* FirebaseFirestoreCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1D9D7D9C2B861B2C006A1DD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreCombine-Community";
-		};
-		1D9D7DA52B861B96006A1DD8 /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1D9D7D9C2B861B2C006A1DD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestoreSwift;
-		};
-		1DACD72E2C1C7E5C00847390 /* OneSignalExtension */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1DACD72D2C1C7E5C00847390 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
-			productName = OneSignalExtension;
-		};
-		1DACD7302C1C7E5C00847390 /* OneSignalFramework */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1DACD72D2C1C7E5C00847390 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			package = 1D58B53E2CF70B970071EDC1 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
 			productName = OneSignalFramework;
 		};
-		1DACD7322C1C7E5C00847390 /* OneSignalInAppMessages */ = {
+		1D58B54E2CF713680071EDC1 /* DGCharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1DACD72D2C1C7E5C00847390 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
-			productName = OneSignalInAppMessages;
+			package = 1D58B54D2CF713680071EDC1 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
 		};
-		1DACD7342C1C7E5C00847390 /* OneSignalLocation */ = {
+		1D58B5512CF7138E0071EDC1 /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1DACD72D2C1C7E5C00847390 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
-			productName = OneSignalLocation;
+			package = 1D58B5502CF7138E0071EDC1 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		1DA9182C2CF6F81D007EB9AE /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DA9182B2CF6F81D007EB9AE /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		1DA9182F2CF6F849007EB9AE /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DA9182E2CF6F849007EB9AE /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
 		};
 /* End XCSwiftPackageProductDependency section */
 

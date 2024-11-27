@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import FirebaseFirestore
 class EAImageView: UIImageView {
 
     let placeholderImage = UIImage(named: "P4")

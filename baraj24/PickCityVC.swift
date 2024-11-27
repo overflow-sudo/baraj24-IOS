@@ -6,107 +6,217 @@
 //
 
 import UIKit
-import FirebaseFirestore
 import GoogleMobileAds
 
-class PickCityVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        1
+class PickCityVC: UIViewController ,GADFullScreenContentDelegate, UITableViewDelegate, UITableViewDataSource {
+ 
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return groupedCities.values.count
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        cities.count
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let sortedKeys = groupedCities.keys.sorted()
+        let sectionKey = sortedKeys[section]
+        return sectionKey
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            
-        return cities[row]
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
-        choosenCity = cities[row]
-        self.navigationItem.title = choosenCity
+        let groupKeys = groupedCities.keys.sorted()
+        let sectionKey = groupKeys[indexPath.section]
+        let selectedCity = groupedCities[sectionKey]?[indexPath.row] ?? ""
+        takeDams(city: selectedCity) { Result in
+            switch Result {
+            case .success(let success):
+                DispatchQueue.main.async {
+                    let detailsVC = DamsPC(dams: success)
+                    self.navigationController?.pushViewController(detailsVC, animated: true)
+                }
+            case .failure(let failure):
+                print("Hata: \(failure.localizedDescription)")
+            }
+        }
 
-        
     }
     
+    private func takeDams(city: String, completion: @escaping (Result<AllDams, Error>) -> Void) {
+        
+        APIManager.shared.takeDams(city: city) { Result in
+            switch Result {
+            case .success(let success):
+                completion(.success(success))
+            case .failure(let failure):
+                print("Veri gelmedi")
+                
+            }
+        }
+        
+    }
+
+    
+    private var interstitial: GADInterstitialAd?
+
     var pickerView : UIPickerView?
-    var cities = ["Şehir Seçin"]
+    var cities : [Cities] = []
+    var groupedCities: [String:[String]] = [:]
     var choosenCity : String?
     var bannerView: GADBannerView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var tableView = UITableView()
+    
+    let pickCityTitle: EATitle = {
+        let label = EATitle(textAlignment: .left, fontSize: 24)
+        label.font = UIFont(name: "Poppins-Bold", size: 30)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = UIColor(resource: .eaBlue)
+        return label
+
+    }()
+    
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
         bannerView = GADBannerView(adSize: GADAdSizeBanner)
         addBannerViewToView(bannerView)
         bannerView.adUnitID = "ca-app-pub-4730844635676967/7298915875"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
-     
-        
-  
-        
 
-        view.backgroundColor = .secondarySystemBackground
+        Task{
+            
+            
+            do {
+                interstitial = try await GADInterstitialAd.load(
+                    withAdUnitID: "ca-app-pub-4730844635676967/2434315662", request: GADRequest())
+                interstitial?.fullScreenContentDelegate = self
+            } catch {
+                print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+            }
+            
+        }
+    
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.view.backgroundColor = .white
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.title = "Şehir Seçin"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "arrow.forward.to.line"), style: .done, target: self, action: #selector(isCitySelected))
-        pickerViewConfigure()
+        let textAttributes : [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor(resource: .titleLabel),
+            .font: UIFont(name: "Poppins-Bold", size: 30)
+        ]
+        
+        self.navigationController?.navigationBar.titleTextAttributes = textAttributes
+        self.navigationController?.navigationBar.largeTitleTextAttributes = textAttributes
+        self.navigationItem.hidesBackButton = true
         fetchData()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.register(CitiesTableViewCell.self, forCellReuseIdentifier: CitiesTableViewCell.id)
+        tableView.separatorStyle = .none
+        tableView.backgroundColor = .white
+        
+        view.addSubview(tableView)
+        
+        NSLayoutConstraint.activate([
+            
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
+            
+        ])
+      
     }
     
     
-    @objc func isCitySelected(){
-        guard let choosenCity = choosenCity else {return}
-        let detailsVC = DetailsVC()
-        detailsVC.city = choosenCity
-        navigationController?.pushViewController(detailsVC, animated: true)
+    /// Tells the delegate that the ad failed to present full screen content.
+    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+      print("Ad did fail to present full screen content.")
     }
-    
 
-    private func pickerViewConfigure(){
-        
-        pickerView = UIPickerView(frame: view.frame)
-        
-        guard let pickerView = pickerView else{
-            return
-        }
-        
-        pickerView.delegate = self
-        pickerView.dataSource = self
-        
-        
-        view.addSubview(pickerView)
-    
+    /// Tells the delegate that the ad will present full screen content.
+    func adWillPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+      print("Ad will present full screen content.")
+    }
+
+    /// Tells the delegate that the ad dismissed full screen content.
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+      print("Ad did dismiss full screen content.")
     }
     
+  
+
     
     
     private func fetchData(){
         
-        let firestore = Firestore.firestore()
+        guard let url = URL(string: "https://baraj24api.emiraksu.net/cities") else {
+            
+            print("Geçersiz URL")
+            return
+        }
         
-        firestore.collection("Dams")
-            .addSnapshotListener{ snap, error in
-                
-            if error != nil{
-                print(error?.localizedDescription)
-                self.makeEAAlert(alertTitle: "Error", alertLabel: "Something happend. We are working on it :)")
+        let urlRequest = URLRequest(url: url)
+        let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+            // Check for error
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
                 return
             }
             
-            guard let snap = snap else {
-                self.makeEAAlert(alertTitle: "Error", alertLabel: "Something happend. We are working on it :)")
-                
-                return}
-            
-            for data in snap.documents {
-                self.cities.append(data.documentID)
+            // Check if data is available
+            guard let jsonData = data else {
+                print("No data received")
+                return
             }
-       
-            self.pickerView?.reloadAllComponents()
+            
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+
+            do {
+                
+                let decodedData = try decoder.decode([Cities].self, from: jsonData)
+                self.cities = decodedData.sorted(by: {$0.city?.lowercased() ?? "" < $1.city?.lowercased() ?? ""})
+                
+                
+                for city in self.cities{
+                    guard let city = city.city else { continue }
+                    
+                    let firstLetter = city.prefix(1)
+                   
+                    if self.groupedCities[String(firstLetter)] == nil {
+                        self.groupedCities[String(firstLetter)] = [city]
+                    } else {
+                        self.groupedCities[String(firstLetter)]?.append(city)
+
+                    }
+                    
+                }
+                
+                
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+        
+            } catch {
+                print("Hata: \(error.localizedDescription)")
+            }
         }
+
+        task.resume()
+
+       
+        
         
         
     }
@@ -131,6 +241,25 @@ class PickCityVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
                               constant: 0)
           ])
        }
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        let city = self.groupedCities.keys.sorted()[section]
+        return groupedCities[city]?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CitiesTableViewCell.id) as! CitiesTableViewCell
+        let sortedKeys = groupedCities.keys.sorted()
+        let key = sortedKeys[indexPath.section]
+        let city = groupedCities[key]?[indexPath.row] ?? "Unknown City"
+        cell.set(city: city)
+        return cell
+    }
     
     
 }

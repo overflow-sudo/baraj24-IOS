@@ -9,6 +9,7 @@ import Foundation
 
 import UIKit
 import Charts
+import DGCharts
 
 extension UIViewController{
     

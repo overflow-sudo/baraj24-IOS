@@ -7,8 +7,8 @@
 
 import UIKit
 import Charts
-import FirebaseFirestore
 import GoogleMobileAds
+import DGCharts
 class DamVC: UIViewController, ChartViewDelegate {
     var bannerView: GADBannerView!
 
@@ -16,7 +16,6 @@ class DamVC: UIViewController, ChartViewDelegate {
     var pieChart = PieChartView()
     var lineChart = LineChartView()
    
-    var old_data = [OldData]()
     //MARK: - ScrollView
     
     private func configureScrollView(){
@@ -41,7 +40,6 @@ class DamVC: UIViewController, ChartViewDelegate {
         
       
     }
-    
     
     private let scrollView : UIScrollView = {
        let view = UIScrollView()
@@ -85,7 +83,7 @@ class DamVC: UIViewController, ChartViewDelegate {
     
     private func configureImageMap(){
         let imageView = EAImageView(frame: .zero)
-        imageView.getImage(url: dam?.image ?? "")
+//        imageView.getImage(url: dam?.image ?? "")
         let textBaraj = EATitle(textAlignment: .left, fontSize: 28)
         let textCity = EALabel(textAlignment: .left, fontSize: 24)
         let blur = addBlur()
@@ -121,8 +119,7 @@ class DamVC: UIViewController, ChartViewDelegate {
 
         ])
         
-        textBaraj.text =  dam?.dam_name
-        textCity.text = dam?.city
+        textBaraj.text =  dam?.dam
     }
    
     //MARK: - Pie Graph
@@ -155,7 +152,7 @@ class DamVC: UIViewController, ChartViewDelegate {
        
         //Pie Graph
         guard let dam = dam else {return}
-        createPieChart(dolu: PieChartDataEntry(value: dam.rate, label: "Dolu"), bos: PieChartDataEntry(value: 100-dam.rate, label: "Boş"), surface: pieGraph, pieChart: pieChart)
+        createPieChart(dolu: PieChartDataEntry(value: dam.activeFullnessAmount, label: "Dolu"), bos: PieChartDataEntry(value: 100-dam.activeFullnessAmount, label: "Boş"), surface: pieGraph, pieChart: pieChart)
         
         pieChart.delegate = self
     }
@@ -195,11 +192,14 @@ class DamVC: UIViewController, ChartViewDelegate {
         
         var entries = [ChartDataEntry]()
         var dates = [String]()
-        for (index, data) in old_data.enumerated(){
+        
+        
+        guard let historicalData = dam?.historicalData else { return }
+        for (index, data) in historicalData.enumerated(){
             print(entries)
-            entries.append(ChartDataEntry(x: Double(index), y: Double(data.rate)))
+            entries.append(ChartDataEntry(x: Double(index), y: Double(data.activeFullnessAmount)))
             
-            dates.append(data.date)
+            dates.append("\(data.date)")
             
         }
         createLineChart(data: entries.suffix(suffix), surface: lineChartView, lineChart: lineChart)
@@ -251,36 +251,11 @@ class DamVC: UIViewController, ChartViewDelegate {
     
     //MARK: - FetchData
     private func fetchData(){
-        let firestore = Firestore.firestore()
-        
-        firestore.collection("Dams").document(dam?.city ?? "") .collection("Baraj").document(dam?.dam_name ?? "").collection("oldData").order(by: "date").addSnapshotListener{ snap, error in
-            
-            guard let documents = snap?.documents else{
-                print(error?.localizedDescription)
-                return
-            }
-            
-            self.old_data = documents.compactMap{(snap) -> OldData? in
-                do{
-                    
-                    let oldData : OldData
-                    
-                    oldData = try snap.data(as: OldData.self)
-                    
-                    return oldData
-                }
-                catch{
-                    print(error.localizedDescription)
-                    
-                    return nil
-                    
-                }
-            }
-            self.updateUI()
-            
-        }
-        
-        
+        guard let dam = dam else{return}
+      
+      
+           self.updateUI()
+      
     }
    
     //MARK: - Update UI
