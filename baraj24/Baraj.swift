@@ -10,13 +10,13 @@ struct Dam: Codable {
     let activeFullnessAmount: Double
     let city: String
     let dam: String
-    let date: Date
+    let date: String
     let historicalData: [HistoricalDatum]?
 }
 
 struct HistoricalDatum: Codable {
     let activeFullnessAmount: Double
-    let date: Date
+    let date: String
 }
 struct Cities: Codable {
     let city: String?

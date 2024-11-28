@@ -69,7 +69,7 @@ class OnboardingVC: UIPageViewController, UIPageViewControllerDataSource, UIPage
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .red
+        view.backgroundColor = UIColor(resource: .eaGray)
         let firstViewController = Onboarding1VC()
         let secondViewController = Onboarding2VC()
         

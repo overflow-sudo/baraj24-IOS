@@ -32,7 +32,7 @@ class PickCityVC: UIViewController ,GADFullScreenContentDelegate, UITableViewDel
             switch Result {
             case .success(let success):
                 DispatchQueue.main.async {
-                    let detailsVC = DamsPC(dams: success)
+                    let detailsVC = DamsPC(dams: success, city: selectedCity)
                     self.navigationController?.pushViewController(detailsVC, animated: true)
                 }
             case .failure(let failure):
@@ -241,6 +241,9 @@ class PickCityVC: UIViewController ,GADFullScreenContentDelegate, UITableViewDel
                               constant: 0)
           ])
        }
+    
+    
+    
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

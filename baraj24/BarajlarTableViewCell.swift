@@ -126,6 +126,8 @@ class BarajlarTableViewCell: UITableViewCell {
         
         guard let historicalData = dam.historicalData else { return }
       
+        guard historicalData.count > 2 else { return }
+        
         if historicalData[historicalData.count - 1].activeFullnessAmount > historicalData[historicalData.count - 2].activeFullnessAmount {
             
             

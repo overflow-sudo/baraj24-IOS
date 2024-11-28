@@ -21,7 +21,7 @@ class APIManager {
             guard let data = data else { print("Data yok")
                 return }
             let decoder = JSONDecoder()
-            decoder.dateDecodingStrategy = .iso8601
+//            decoder.dateDecodingStrategy = .iso8601
             do {
                 var decodedData = try decoder.decode(AllDams.self, from: data)
                 

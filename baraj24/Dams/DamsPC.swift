@@ -6,16 +6,20 @@ class DamsPC: UIPageViewController, UIPageViewControllerDelegate, UIPageViewCont
     var pages: [UIViewController] = []
     let myPageControl = EAPageControl(titles: ["Doluluk", "Barajlar"])
     var bannerView: GADBannerView!
-
-    init(dams: AllDams) {
+   
+    
+    
+    init(dams: AllDams, city: String) {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
-        pages = [DamRateVC(dams: dams), DamListVC(dams: dams.dams)]
+        pages = [DamRateVC(dams: dams, city: city), DamListVC(dams: dams.dams)]
         self.delegate = self
         self.dataSource = self
       
         if let firstViewController = pages.first {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
+        
+     
         
         view.backgroundColor = UIColor.white
     

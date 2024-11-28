@@ -19,7 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
        
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-
+        OneSignal.Debug.setLogLevel(.LL_VERBOSE)
+          
+          OneSignal.initialize("4df95300-a342-4ae2-a214-a6e982a14460", withLaunchOptions: launchOptions)
+   
+          OneSignal.Notifications.requestPermission({ accepted in
+            print("User accepted notifications: \(accepted)")
+          }, fallbackToSettings: true)
 
         return true
     }
@@ -37,6 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    
 
     // MARK: - Core Data stack
 
